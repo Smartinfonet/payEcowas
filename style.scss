@@ -1,0 +1,455 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+/* header */
+header{
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: block;
+}
+.header-top{
+    background-color: #003087;
+    padding: 20px 0;
+    color: #fff;
+    height: 10vh;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.header-top img{
+    width: 18%;
+}
+.header-top img:hover{
+    width: 20%;
+}
+.header-nav{
+    min-height: 7vh;
+    background-color: #fff;
+    color: #003087 !important;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: .7rem;
+    border-bottom: 2px solid #003087;
+}
+.header-nav .nav-item{
+   display: flex;
+   cursor: pointer;
+   text-align: center;
+}
+.nav-item a:hover{
+    border: 2px solid #003087;
+    padding: 5px;
+    border-radius: 10px;
+}
+/* hero */
+
+// #hero{
+//     background-image:url(img/logo.jpg);
+//     height: 100vh;
+//     background-position: center;
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     margin-top: 4rem;
+//     margin-bottom: 2rem;
+// }
+/* about section */
+#about{
+    padding: 20px 5px;
+    color: #003087;
+    img{
+        height: 50%;
+        width: 100%;
+    }
+}
+#about h1{
+    font-size: 3rem;
+    text-align: left;
+    font-weight: 800;
+}
+#about p{
+    font-size: 1.4rem;
+    text-align: left;
+    font-weight: 500;
+}
+/* showcase */
+#showcase{
+    margin: 3rem 0;
+    padding: 5px 0;
+
+}
+.showcase-text{
+    text-align: center;
+    color: #003087;
+    p{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+}
+.showcase-item{
+    text-align: center;
+    align-items: center;
+    color: #003087;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px ;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 2px solid #003087 ;
+    i{
+        font-size: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    h6{
+        font-size: 1.3em;
+        margin-bottom: 1em;
+    }
+    :hover{
+        transform: scale(1.1);
+    }
+}
+
+// team 
+#team{
+    margin: 3rem 0;
+    padding: 2rem 0;
+    .showcase-text{
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+    }
+}
+.card{
+    position: relative;
+    width: 14rem;
+    height: 15rem;
+    margin: 1.4rem auto;
+    text-align: center;
+    justify-content: center;
+    line-height: 8rem;
+    border-radius: 0.8rem;
+    // transform-style: preserve-3d;
+}
+.face{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 00.8rem;
+    background-size: cover;
+    background-position: center center;
+    // transition: 3s;
+}
+.face-front{
+    font-size: 3rem;
+    transition: 5s;
+    img{
+        border-radius: 00.8rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.face-back{
+    background: #2c3e50;
+    font-size: 1rem;
+    display: block;
+    color: #fff;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    height: 10vh;
+    h4{
+        left: 20px;
+        position: absolute;
+        text-align: center;
+        top: -40px;
+        
+    }
+    p{
+        left: 20px;
+        position: absolute;
+        top: -18px;
+        text-align: center;
+    }
+
+}
+.card:hover .face-front{
+    transform: rotateY(-180deg);
+}
+// .card:hover .face-back{
+//     transform: rotateX(0deg);
+//     display: block;
+// }
+/* GET IN TOUCH */
+#touch h4 {
+    text-align: center;
+
+}
+
+#touch h4::after {
+    width: 150px;
+    height: 3px;
+    content: "";
+    margin: 7px auto 1px;
+    background: #007bff;
+    display: block;
+}
+
+#touch {
+    background-color: rgb(233, 240, 239);
+    padding: 20px;
+    padding-top: 40px;
+}
+
+form {
+    padding: 20px;
+}
+
+#touch input {
+    padding: 20px;
+    justify-content: space-between;
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+}
+
+.btn {
+    margin-top: 15px !important;
+    background: #007bff !important;
+    border: #007bff !important;
+}
+
+.follow {
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px !important;
+}
+
+.righ-form {
+    position: relative;
+    top: 20px !important;
+    margin-top: 30px !important;
+    padding: 10px;
+}
+
+.righ-form i .fab {
+    margin: 10px !important;
+    color: blue !important;
+    background-color: blue;
+    display: block !important;
+
+}
+.scrol-btn{
+    display: none;
+}
+
+.fa-caret-up {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    padding: 20px;
+    border-radius: 50%;
+    border: 2px solid #007bff25;
+    font-size: 1.4em;
+    color: #007bff;
+}
+.fa-caret-up:hover{
+    background-color: #007bff;
+    color: white;
+    border: 2px solid white;
+}
+#footer{
+    // body {
+    //     font-family: poppins sans-serif;
+    //     line-height: 1.5;
+    //     list-style-type: none;
+    // }
+    
+    // * {
+    //     margin: 0;
+    //     padding: 0;
+    //     color: #ffffff;
+    //     box-sizing: border-box;
+    //     text-decoration: none;
+    // }
+    
+    .container {
+        max-width: 1170px;
+        margin: auto;
+    }
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    .footer {
+        background-color: #24262b;
+        padding: 70px 0;
+    }
+    
+    .footer-col {
+        width: 25%;
+        padding: 0 15px;
+    }
+    
+    .footer-col h4 {
+        font-size: 18px;
+        color: #003087;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        margin-top: 2rem;
+        position: relative;
+        font-weight: 500;
+    }
+    
+    .footer-col h4::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #007bff !important;
+        height: 2px;
+        box-sizing: border-box;
+        width: 70px;
+    }
+    
+    .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    
+    .footer-col ul li {
+        list-style-type: none;
+    }
+    
+    .footer-col ul li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #003087;
+        text-decoration: none;
+        font-weight: 300;
+        list-style-type: none;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    
+    .footer-col ul li a:hover {
+        color: #fff;
+        padding-left: 8px;
+    }
+    
+    .footer-col .social-links a {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #003087;
+        transition: all 0.5 ease;
+    }
+    
+    .footer-col .social-links a:hover {
+        color: #24262b !important;
+        background-color: #003087;
+    }
+    
+    /* respponsiveness */
+   
+    @media (max-width: 767px) {
+        .footer-col {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    
+    }
+}
+    @media (max-width: 574px) {
+        .footer-col {
+            width: 1000%;
+    
+        }
+    }
+
+// responsiveness
+@media (max-width: 676px) {
+    .header-top{
+        height: fit-content;
+    }
+ .header-logo{
+    display: none;
+ }
+ .header-account{
+    display: none;
+ }
+ #about{
+    img{
+        width: 100%;
+        height: 120%;
+    }
+    h1{
+        font-size: 1.5rem;
+        padding: 1rem 0;
+
+    }
+    p{
+        font-size: 1rem;
+    }
+ }
+ #showcase{
+    h1{
+        font-size: 1.8rem;
+    }
+}
+.showcase-text{
+    text-align: center;
+    font-size: 1rem;
+}
+ #team{
+    .flex{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+ }
+ #touch{
+    input{
+        width: 100%;
+    }
+ }
+
+}
